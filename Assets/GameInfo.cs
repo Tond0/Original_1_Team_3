@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GameInfo : MonoBehaviour
 {
+    public string nome;
+    public Rarity rarity;
+    public bool originale;
     // Start is called before the first frame update
     void Start()
     {
