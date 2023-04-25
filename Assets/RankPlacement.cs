@@ -13,6 +13,7 @@ public class RankPlacement : MonoBehaviour
     // Start is called before the first frame update
     private ScriptableRank[] concorrenti;
     public GameObject rankTile;
+    public Transform snap;
     public float offsets;
 
     void Start()
@@ -30,7 +31,7 @@ public class RankPlacement : MonoBehaviour
         int i = 0;
         foreach (ScriptableRank rank in concorrenti)
         {
-            Tile posSpawnata = Instantiate(rankTile, this.transform, false).GetComponent<Tile>();
+            Tile posSpawnata = Instantiate(rankTile, snap.transform, false).GetComponent<Tile>();
             posSpawnata.transform.localPosition += new Vector3(0, i * -offsets, 0);
             posSpawnata.posizione.text = i + 1 + "°";
             posSpawnata.nome.text = rank.nome;

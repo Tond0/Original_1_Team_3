@@ -17,7 +17,8 @@ public class GameInfo : MonoBehaviour
     bool interactable;
     [SerializeField] AnimationCurve moveToDest;
 
-
+    [SerializeField] private float durata;
+    private float timeRemaining = 0;
 
 
 
@@ -54,10 +55,12 @@ public class GameInfo : MonoBehaviour
 
     void MoveGameToDest()
     {
-
+        float t = timeRemaining / durata;
+        float ease = moveToDest.Evaluate(timeRemaining/durata);
         if (!interactable)
         {
-            transform.position = Vector3.Lerp(startPos, destination, moveToDest.Evaluate(Time.deltaTime * 0.001f));
+            transform.position = Vector3.Lerp(startPos, destination, ease);
+            timeRemaining += Time.deltaTime;
         }
 
 
