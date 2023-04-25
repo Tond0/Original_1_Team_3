@@ -16,10 +16,10 @@ public class GameInfo : MonoBehaviour
     private Vector3 startRot;
     public Vector3 destination;
     public Vector3 rotDest;
-    bool interactable;
+    [SerializeField] bool interactable;
     [SerializeField] AnimationCurve moveToDest;
     [SerializeField] AnimationCurve rotToDest;
-
+    [SerializeField] LayerMask whereToLand;
     [SerializeField] GameObject pacco;
 
     [SerializeField] private float durata;
@@ -47,11 +47,10 @@ public class GameInfo : MonoBehaviour
         if (interactable)
         {
             if (pickedUp)
-                transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 5));
+                transform.localPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 60));
         }
 
         MoveGameToDest();
-
     }
 
     public void DoPickedUp()
@@ -59,26 +58,38 @@ public class GameInfo : MonoBehaviour
         pickedUp = !pickedUp;
     }
 
+    public void GameReleased()
+    {
+        Ray castPoint = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(castPoint, out RaycastHit hit, 200, whereToLand))
+        {
+            destination = hit.point;
+            startPos = transform.position;
+            interactable = false;
+            timeRemaining = 0;
+            DoPickedUp();
+        }
+    }
+
     void MoveGameToDest()
     {
         float t = timeRemaining / durata;
         float ease = moveToDest.Evaluate(t);
         float rotEase = rotToDest.Evaluate(t);
+
         if (!interactable)
         {
             transform.position = Vector3.Lerp(startPos, destination, ease);
-            pacco.transform.eulerAngles = Vector3.Lerp(startRot, rotDest, ease);
+            pacco.transform.eulerAngles = Vector3.Lerp(startRot, rotDest, rotEase);
             timeRemaining += Time.deltaTime;
         }
 
 
-        if (pacco.transform.position == destination)
+        if (Vector3.Distance(pacco.transform.position, destination) < 0.1f)
         {
             interactable = true;
         }
     }
-
-
 }
 
 
