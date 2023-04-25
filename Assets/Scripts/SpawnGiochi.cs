@@ -47,9 +47,20 @@ public class SpawnGiochi : MonoBehaviour
 
 
 
-    [Header("Time Between Spawns")]
-    [SerializeField] int maxTime;
-    [SerializeField] int minTime;
+    [Header("Tempo do spawn fra giochi")]
+    [SerializeField] int time1;
+    [SerializeField] int time2;
+    [SerializeField] int time3;
+    [SerializeField] int time4;
+    [SerializeField] int time5;
+    [SerializeField] int time6;
+
+
+    [Header("Tempo do spawn fra giochi")]
+    [SerializeField] int minGameRange1;
+    [SerializeField] int MaxGameRange1;
+
+
     float spawnTimer;
 
     [SerializeField] GameObject box;
@@ -78,27 +89,39 @@ public class SpawnGiochi : MonoBehaviour
         else
         {
 
-            int rarityPercentage = Random.Range(1, 101);
 
 
 
-            if (rarityPercentage <= commonPercentage)
+            int randomGamesNumber = Random.Range(minGameRange1, MaxGameRange1 + 1);
+
+
+
+            while (randomGamesNumber > 0)
             {
-                spawnGroup(commonGamesList, minCommonSpawns, commonMterial);
+
+                int rarityPercentage = Random.Range(1, 101);
+
+                if (rarityPercentage <= commonPercentage)
+                {
+                    spawnGroup(commonGamesList, minCommonSpawns, commonMterial);
+                }
+                else if (rarityPercentage > commonPercentage && rarityPercentage <= rarePercentage)
+                {
+                    spawnGroup(rareGamesList, minRareSpawns, rareMaterial);
+                }
+                else if (rarityPercentage > rarePercentage && rarityPercentage <= epickPercentage)
+                {
+                    spawnGroup(epickGamesList, minEpickSpawns, epicMaterial);
+                }
+                else if (rarityPercentage > epickPercentage && rarityPercentage <= legendaryPercentage)
+                {
+                    spawnGroup(legendaryGamesList, minLegendarySapwns, legendaryMaterial);
+                }
+
+                randomGamesNumber--;
             }
-            else if (rarityPercentage > commonPercentage && rarityPercentage <= rarePercentage)
-            {
-                spawnGroup(rareGamesList, minRareSpawns, rareMaterial);
-            }
-            else if (rarityPercentage > rarePercentage && rarityPercentage <= epickPercentage)
-            {
-                spawnGroup(epickGamesList, minEpickSpawns, epicMaterial);
-            }
-            else if (rarityPercentage > epickPercentage && rarityPercentage <= legendaryPercentage)
-            {
-                spawnGroup(legendaryGamesList, minLegendarySapwns, legendaryMaterial);
-            }
-            spawnTimer = Random.Range(minTime, maxTime);
+
+            spawnTimer = time1;
         }
 
     }
@@ -145,7 +168,7 @@ public class SpawnGiochi : MonoBehaviour
 
         Vector3 spawn = new Vector3(Xrange, 0.5f, 200);
         Vector3 Destination = new Vector3(Xrange, 0.5f, Zrange);
-        Vector3 rotDest = new Vector3(90,rotRange,0);
+        Vector3 rotDest = new Vector3(90, rotRange, 0);
 
 
         GameObject tmp = Instantiate(Box, spawn, Quaternion.identity, Folder);

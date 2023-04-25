@@ -188,7 +188,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ed2f156925407b2418398bc6ea1aa1b8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -356,7 +356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038753379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -129.94, y: 0, z: 75.03}
+  m_LocalPosition: {x: -121.8, y: 0, z: 61.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1949180862}
@@ -479,7 +479,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596200233}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 135.05, y: 0, z: -30.08}
+  m_LocalPosition: {x: 119.6, y: 0, z: -21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1949180862}
@@ -559,11 +559,17 @@ MonoBehaviour:
   epickProbability: 15
   legendariProbabiliti: 5
   minCommonSpawns: 2
-  minRareSpawns: 3
-  minEpickSpawns: 4
-  minLegendarySapwns: 5
-  maxTime: 10
-  minTime: 5
+  minRareSpawns: 2
+  minEpickSpawns: 2
+  minLegendarySapwns: 2
+  time1: 3
+  time2: 0
+  time3: 0
+  time4: 0
+  time5: 0
+  time6: 0
+  minGameRange1: 2
+  MaxGameRange1: 4
   box: {fileID: 4084230687790942940, guid: 244f9468756ce784e9ce88e812ab7684, type: 3}
 --- !u!1 &1949180861
 GameObject:
