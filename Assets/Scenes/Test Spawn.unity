@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -540,6 +540,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7eb2a3649c0ffc948a9034a968132e7b, type: 2}
   - {fileID: 11400000, guid: 948a7031ed25e394293cf247ff6da9b4, type: 2}
   - {fileID: 11400000, guid: 595e4ae6c4958004bb94d8161e1007b9, type: 2}
+  - {fileID: 11400000, guid: 13c7bc3918829c84fa6a07eaa1157d46, type: 2}
   epickGamesList:
   - {fileID: 11400000, guid: 60d7585a479d6a0449b53752ff1113a9, type: 2}
   - {fileID: 11400000, guid: 130d97fc281cb1448a75eb299b226ed6, type: 2}
@@ -551,9 +552,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dca2cc0794e88284d980be4009342260, type: 2}
   - {fileID: 11400000, guid: 9ab37c6f66f7af9459b68a557ff4f80d, type: 2}
   commonMterial: {fileID: 2100000, guid: 88fc129af5212ab479ba1dea07cf6e1e, type: 2}
-  rareMaterial: {fileID: 2100000, guid: 07d35a3547ab0124fae0f6a622aa9ad6, type: 2}
-  epicMaterial: {fileID: 2100000, guid: c6f1f32c0365d5945a3dd7f25d0459fe, type: 2}
-  legendaryMaterial: {fileID: 2100000, guid: ae8f8e5f266408644a5481f8c4be011f, type: 2}
+  rareMaterial: {fileID: 2100000, guid: c6f1f32c0365d5945a3dd7f25d0459fe, type: 2}
+  epicMaterial: {fileID: 2100000, guid: ae8f8e5f266408644a5481f8c4be011f, type: 2}
+  legendaryMaterial: {fileID: 2100000, guid: 07d35a3547ab0124fae0f6a622aa9ad6, type: 2}
   commonProbability: 50
   rareProbability: 30
   epickProbability: 15
