@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -530,12 +530,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   limitA: {fileID: 1596200234}
   limitB: {fileID: 1038753380}
-  gamesList:
-  - {fileID: 11400000, guid: 9de98f2cc73df954ab99d31265259384, type: 2}
-  - {fileID: 11400000, guid: 1474f098528733c4498752379f1e2e7a, type: 2}
-  - {fileID: 11400000, guid: 68253c62b6c57cb40b6d1d884cd326a6, type: 2}
-  - {fileID: 11400000, guid: 65476eb266054bd459fa00e76c5e7327, type: 2}
-  - {fileID: 11400000, guid: 38266506c29beb64fbe0f570ea8f6cfe, type: 2}
+  commonGamesList:
+  - {fileID: 11400000, guid: bf7a23f6db93d6141b2d3d8b55ab58f4, type: 2}
+  - {fileID: 11400000, guid: a2e8c88f79d31c24da6fe8f23fe9b611, type: 2}
+  - {fileID: 11400000, guid: 81a026434ad2e1143a43fcbfcd032525, type: 2}
+  - {fileID: 11400000, guid: 31fb0d9a8240ff5408d7b84e22a3e6a8, type: 2}
+  rareGamesList:
+  - {fileID: 11400000, guid: a4ed1285ef5dcb14394f81c679e99c24, type: 2}
+  - {fileID: 11400000, guid: 7eb2a3649c0ffc948a9034a968132e7b, type: 2}
+  - {fileID: 11400000, guid: 948a7031ed25e394293cf247ff6da9b4, type: 2}
+  - {fileID: 11400000, guid: 595e4ae6c4958004bb94d8161e1007b9, type: 2}
+  epickGamesList:
+  - {fileID: 11400000, guid: 60d7585a479d6a0449b53752ff1113a9, type: 2}
+  - {fileID: 11400000, guid: 130d97fc281cb1448a75eb299b226ed6, type: 2}
+  - {fileID: 11400000, guid: 803aab276272b1741a1dfe1e85a9198b, type: 2}
+  - {fileID: 11400000, guid: 32a19aa4b04d297408efacde8f17cbf4, type: 2}
+  legendaryGamesList:
+  - {fileID: 11400000, guid: 46cb0cf16552b4f4ea74117839db49da, type: 2}
+  - {fileID: 11400000, guid: 96712b5282caa01419adda480a3f42b2, type: 2}
+  - {fileID: 11400000, guid: dca2cc0794e88284d980be4009342260, type: 2}
+  - {fileID: 11400000, guid: 9ab37c6f66f7af9459b68a557ff4f80d, type: 2}
+  commonMterial: {fileID: 2100000, guid: 88fc129af5212ab479ba1dea07cf6e1e, type: 2}
+  rareMaterial: {fileID: 2100000, guid: 07d35a3547ab0124fae0f6a622aa9ad6, type: 2}
+  epicMaterial: {fileID: 2100000, guid: c6f1f32c0365d5945a3dd7f25d0459fe, type: 2}
+  legendaryMaterial: {fileID: 2100000, guid: ae8f8e5f266408644a5481f8c4be011f, type: 2}
+  commonProbability: 50
+  rareProbability: 30
+  epickProbability: 15
+  legendariProbabiliti: 5
+  minCommonSpawns: 2
+  minRareSpawns: 3
+  minEpickSpawns: 4
+  minLegendarySapwns: 5
   maxTime: 10
   minTime: 5
   box: {fileID: 4084230687790942940, guid: 244f9468756ce784e9ce88e812ab7684, type: 3}

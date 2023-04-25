@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a31cb0160df9d942b8c3a8e2e39c29a, type: 3}
+  m_Name: Test Leggendario 3
+  m_EditorClassIdentifier: 
+  nome_gioco: leggendario 3 vero
+  rarity: 0
+  nomi_falsi:
+  - leggendario falso 1
+  - leggendario falso 2
+  - leggendario falso 3
+  - leggendario falso 4
+  - leggendario falso 5
+  - leggendario falso 6
+  - leggendario falso 7
+  - leggendario falso 8
+  - leggendario falso 9

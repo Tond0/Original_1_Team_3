@@ -13,9 +13,12 @@ public class GameInfo : MonoBehaviour
     public Rarity rarity;
     public bool originale;
     private Vector3 startPos;
+    private Vector3 startRot;
     public Vector3 destination;
+    public Vector3 rotDest;
     bool interactable;
     [SerializeField] AnimationCurve moveToDest;
+    [SerializeField] AnimationCurve rotToDest;
 
     [SerializeField] private float durata;
     private float timeRemaining = 0;
@@ -33,6 +36,7 @@ public class GameInfo : MonoBehaviour
         txtDisplay.text = nome;
 
         startPos = transform.position;
+        startRot = transform.eulerAngles;
     }
 
     // Update is called once per frame
@@ -56,10 +60,12 @@ public class GameInfo : MonoBehaviour
     void MoveGameToDest()
     {
         float t = timeRemaining / durata;
-        float ease = moveToDest.Evaluate(timeRemaining/durata);
+        float ease = moveToDest.Evaluate(t);
+        float rotEase = rotToDest.Evaluate(t);
         if (!interactable)
         {
             transform.position = Vector3.Lerp(startPos, destination, ease);
+            transform.eulerAngles = Vector3.Lerp(startRot, rotDest, ease);
             timeRemaining += Time.deltaTime;
         }
 
