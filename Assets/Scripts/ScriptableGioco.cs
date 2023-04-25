@@ -6,7 +6,7 @@ using UnityEngine;
 public enum Rarity { Comune, Raro, Epico, Leggendario };
 
 [CreateAssetMenu(menuName = "Gioco")]
-public class ScriptableGioco : ScriptableObject
+public class ScriptableGioco : UnityEngine.ScriptableObject
 {
     public string nome_gioco;
     public Rarity rarity;
