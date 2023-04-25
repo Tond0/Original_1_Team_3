@@ -20,6 +20,8 @@ public class GameInfo : MonoBehaviour
     [SerializeField] AnimationCurve moveToDest;
     [SerializeField] AnimationCurve rotToDest;
 
+    [SerializeField] GameObject pacco;
+
     [SerializeField] private float durata;
     private float timeRemaining = 0;
 
@@ -36,7 +38,7 @@ public class GameInfo : MonoBehaviour
         txtDisplay.text = nome;
 
         startPos = transform.position;
-        startRot = transform.eulerAngles;
+        startRot = pacco.transform.eulerAngles;
     }
 
     // Update is called once per frame
@@ -65,12 +67,12 @@ public class GameInfo : MonoBehaviour
         if (!interactable)
         {
             transform.position = Vector3.Lerp(startPos, destination, ease);
-            transform.eulerAngles = Vector3.Lerp(startRot, rotDest, ease);
+            pacco.transform.eulerAngles = Vector3.Lerp(startRot, rotDest, ease);
             timeRemaining += Time.deltaTime;
         }
 
 
-        if (transform.position == destination)
+        if (pacco.transform.position == destination)
         {
             interactable = true;
         }
