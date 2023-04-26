@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: 2d80e3ceef29141409d5d550a042fa25
+guid: 7ce4eb4a39ecc994b94510b27828b7e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 82482663673059291
-    second: Tasti_0
+      213: 7719962674037543878
+    second: Cursore mano_0
   - first:
-      213: 3953856027992777640
-    second: Tasti_1
-  - first:
-      213: -1852326940948124585
-    second: Tasti_2
-  - first:
-      213: 2737155983633410453
-    second: Tasti_3
-  - first:
-      213: -8753735761117641273
-    second: Tasti_4
-  - first:
-      213: -4381141429769993168
-    second: Tasti_5
+      213: -3376392885773028790
+    second: Cursore mano_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -109,127 +97,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tasti_0
+      name: Cursore mano_0
       rect:
         serializedVersion: 2
-        x: 209
-        y: 273
-        width: 1712
-        height: 1614
+        x: 691
+        y: 245
+        width: 1299
+        height: 1669
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd75c5cab89052100800000000000000
-      internalID: 82482663673059291
+      spriteID: 6c358416621d22b60800000000000000
+      internalID: 7719962674037543878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tasti_1
+      name: Cursore mano_1
       rect:
         serializedVersion: 2
-        x: 2182
-        y: 1249
-        width: 1042
-        height: 398
+        x: 2131
+        y: 261
+        width: 1018
+        height: 912
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a3eb89eb1beed630800000000000000
-      internalID: 3953856027992777640
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tasti_2
-      rect:
-        serializedVersion: 2
-        x: 2183
-        y: 1655
-        width: 1041
-        height: 412
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75ca6e416763b46e0800000000000000
-      internalID: -1852326940948124585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tasti_3
-      rect:
-        serializedVersion: 2
-        x: 2182
-        y: 747
-        width: 1042
-        height: 482
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 599ed437dd45cf520800000000000000
-      internalID: 2737155983633410453
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tasti_4
-      rect:
-        serializedVersion: 2
-        x: 2273
-        y: 427
-        width: 854
-        height: 408
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c503fc54bb748680800000000000000
-      internalID: -8753735761117641273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tasti_5
-      rect:
-        serializedVersion: 2
-        x: 2384
-        y: 153
-        width: 714
-        height: 329
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03400d7f41f0333c0800000000000000
-      internalID: -4381141429769993168
+      spriteID: a42b75d2f84a421d0800000000000000
+      internalID: -3376392885773028790
       vertices: []
       indices: 
       edges: []
@@ -237,7 +141,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 43da9f8c574602846b282cf77b60207e
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

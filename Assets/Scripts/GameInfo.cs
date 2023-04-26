@@ -61,14 +61,14 @@ public class GameInfo : MonoBehaviour
     public void GameReleased()
     {
         Ray castPoint = Camera.main.ScreenPointToRay(Input.mousePosition);
+
         if (Physics.Raycast(castPoint, out RaycastHit hit, 200, whereToLand))
-        {
             destination = hit.point;
-            startPos = transform.position;
-            interactable = false;
-            timeRemaining = 0;
-            DoPickedUp();
-        }
+
+        startPos = transform.position;
+        interactable = false;
+        timeRemaining = 0;
+        DoPickedUp();
     }
 
     void MoveGameToDest()
