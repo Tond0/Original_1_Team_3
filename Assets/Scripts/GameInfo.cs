@@ -16,6 +16,8 @@ public class GameInfo : MonoBehaviour
     private Vector3 startRot;
     public Vector3 destination;
     public Vector3 rotDest;
+    public Texture2D manoAperta;
+    public Texture2D manoChiusa;
     [SerializeField] bool interactable;
     [SerializeField] AnimationCurve moveToDest;
     [SerializeField] AnimationCurve rotToDest;
@@ -26,10 +28,7 @@ public class GameInfo : MonoBehaviour
     private float timeRemaining = 0;
 
 
-
-
-
-    private bool pickedUp;
+    [SerializeField]private bool pickedUp;
     private TextMeshProUGUI txtDisplay;
     // Start is called before the first frame update
     void Start()
@@ -47,7 +46,15 @@ public class GameInfo : MonoBehaviour
         if (interactable)
         {
             if (pickedUp)
+            {
                 transform.localPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 60));
+                Cursor.SetCursor(manoChiusa, new Vector2(manoChiusa.width / 2, manoChiusa.height / 2), CursorMode.Auto);
+                Debug.Log("entrato");
+            }
+            else
+            {
+                Cursor.SetCursor(manoAperta, new Vector2(manoAperta.width / 2, manoAperta.height / 2), CursorMode.Auto);
+            }
         }
 
         MoveGameToDest();
@@ -55,7 +62,7 @@ public class GameInfo : MonoBehaviour
 
     public void DoPickedUp()
     {
-        pickedUp = !pickedUp;
+        pickedUp = true;
     }
 
     public void GameReleased()
@@ -68,7 +75,7 @@ public class GameInfo : MonoBehaviour
         startPos = transform.position;
         interactable = false;
         timeRemaining = 0;
-        DoPickedUp();
+        pickedUp = false;
     }
 
     void MoveGameToDest()

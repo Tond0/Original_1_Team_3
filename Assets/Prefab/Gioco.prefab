@@ -66,6 +66,8 @@ MonoBehaviour:
   originale: 0
   destination: {x: 0, y: 0, z: 0}
   rotDest: {x: 0, y: 0, z: 0}
+  manoAperta: {fileID: 2800000, guid: 7d11f691c7b34e847840dacc2c37af32, type: 3}
+  manoChiusa: {fileID: 2800000, guid: 3b7076f4bf3dd874bb85df4ef113ed3f, type: 3}
   interactable: 0
   moveToDest:
     serializedVersion: 2

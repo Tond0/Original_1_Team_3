@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: 7ce4eb4a39ecc994b94510b27828b7e5
+guid: 3b7076f4bf3dd874bb85df4ef113ed3f
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 7719962674037543878
-    second: Cursore mano_0
-  - first:
-      213: -3376392885773028790
-    second: Cursore mano_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -47,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,49 +89,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Cursore mano_0
-      rect:
-        serializedVersion: 2
-        x: 691
-        y: 245
-        width: 1299
-        height: 1669
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c358416621d22b60800000000000000
-      internalID: 7719962674037543878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cursore mano_1
-      rect:
-        serializedVersion: 2
-        x: 2131
-        y: 261
-        width: 1018
-        height: 912
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a42b75d2f84a421d0800000000000000
-      internalID: -3376392885773028790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
