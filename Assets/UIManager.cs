@@ -14,6 +14,9 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI timerTxt;
     public TextMeshProUGUI punteggioTxt;
 
+    public Texture2D manoAperta;
+    public Texture2D manoChiusa;
+
     public static UIManager instance;
 
     public void Awake()
@@ -26,11 +29,25 @@ public class UIManager : MonoBehaviour
 
     public void Start()
     {
-        /*spawn.enabled = false;
+        spawn.enabled = false;
 
         menu_principale.SetActive(true);
         game_UI.SetActive(false);
-        menu_finale.SetActive(false);*/
+        menu_finale.SetActive(false);
+    }
+
+    private void Update()
+    {
+        MouseTextureChanger();
+    }
+
+    public void MouseTextureChanger()
+    {
+        if (Input.GetMouseButton(0))
+            Cursor.SetCursor(manoChiusa, new Vector2(manoAperta.width / 2, manoAperta.height / 2), CursorMode.ForceSoftware);
+        else
+            Cursor.SetCursor(manoAperta, new Vector2(manoAperta.width / 2, manoAperta.height / 2), CursorMode.ForceSoftware);
+
     }
 
     public void IniziaGioco()

@@ -165,19 +165,24 @@ public class SpawnGiochi : MonoBehaviour
 
         Vector3 spawn = new Vector3(Xrange, 0.5f, 200);
         Vector3 Destination = new Vector3(Xrange, 0.5f, Zrange);
-        Vector3 rotDest = new Vector3(90, rotRange, 0);
+        Vector3 rotDest = new Vector3(0, rotRange, 0);
 
 
         GameObject tmp = Instantiate(Box, spawn, Quaternion.identity, Folder);
 
         GameInfo game = tmp.GetComponent<GameInfo>();
-        MeshRenderer meshRenderer = tmp.GetComponentInChildren<MeshRenderer>();
+        MeshRenderer[] meshRenderer = tmp.GetComponentsInChildren<MeshRenderer>();
+
+        foreach(MeshRenderer mesh in meshRenderer)
+        {
+            mesh.material = rarityMaterial;
+        }
+
         game.destination = Destination;
         game.name = name;
         game.nome = name;
         game.originale = Validity;
         game.rotDest = rotDest;
-        meshRenderer.material = rarityMaterial;
     }
 
 

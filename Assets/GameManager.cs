@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
         if (tempo_gioco < 0)
         {
             UIManager.instance.FinisceGioco();
-            scriptableRankPlayer.punteggio = punteggio.;
+            scriptableRankPlayer.punteggio = punteggio;
         }
     }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class button_events : MonoBehaviour
+public class button_and_transition : MonoBehaviour
 {
     public void QuitGame()
     {
@@ -13,5 +13,15 @@ public class button_events : MonoBehaviour
     public void Replay()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void GameOn()
+    {
+        UIManager.instance.IniziaGioco();
+    }
+
+    public void Seppuku()
+    {
+        Destroy(transform.parent.gameObject);
     }
 }

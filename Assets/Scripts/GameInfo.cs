@@ -16,16 +16,17 @@ public class GameInfo : MonoBehaviour
     private Vector3 startRot;
     public Vector3 destination;
     public Vector3 rotDest;
-    public Texture2D manoAperta;
-    public Texture2D manoChiusa;
     [SerializeField] bool interactable;
     [SerializeField] AnimationCurve moveToDest;
     [SerializeField] AnimationCurve rotToDest;
     [SerializeField] LayerMask whereToLand;
     [SerializeField] GameObject pacco;
+    [SerializeField] GameObject mano;
 
-    [SerializeField] private float durata;
-    private float timeRemaining = 0;
+    [SerializeField] private float durataVita;
+    [SerializeField] private float durataTransizione;
+    private float timeRemainingTransizione = 0;
+    private float timeRemainingVita = 0;
 
 
     [SerializeField]private bool pickedUp;
@@ -49,11 +50,12 @@ public class GameInfo : MonoBehaviour
             {
                 transform.localPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 60));
             }
-            else
-            {
-                Cursor.SetCursor(manoAperta, new Vector2(manoAperta.width / 2, manoAperta.height / 2), CursorMode.Auto);
-            }
         }
+
+        if (timeRemainingVita < durataVita)
+            timeRemainingVita += Time.deltaTime;
+        else
+            Destroy(gameObject);
 
         MoveGameToDest();
     }
@@ -72,13 +74,13 @@ public class GameInfo : MonoBehaviour
 
         startPos = transform.position;
         interactable = false;
-        timeRemaining = 0;
+        timeRemainingTransizione = 0;
         pickedUp = false;
     }
 
     void MoveGameToDest()
     {
-        float t = timeRemaining / durata;
+        float t = timeRemainingTransizione / durataTransizione;
         float ease = moveToDest.Evaluate(t);
         float rotEase = rotToDest.Evaluate(t);
 
@@ -86,7 +88,7 @@ public class GameInfo : MonoBehaviour
         {
             transform.position = Vector3.Lerp(startPos, destination, ease);
             pacco.transform.eulerAngles = Vector3.Lerp(startRot, rotDest, rotEase);
-            timeRemaining += Time.deltaTime;
+            timeRemainingTransizione += Time.deltaTime;
         }
 
 
