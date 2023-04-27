@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a31cb0160df9d942b8c3a8e2e39c29a, type: 3}
   m_Name: Test Comune 4
   m_EditorClassIdentifier: 
-  nome_gioco: comune 4 vero
+  nome_gioco: "Player Unknown\u2019s Battleground "
   rarity: 0
   nomi_falsi:
-  - comune 4 falso 1
-  - comune 4 falso 1
+  - " Player Unknown\u2019s Battlefield"
+  - " Player Unknown\u2019s Battlefield"

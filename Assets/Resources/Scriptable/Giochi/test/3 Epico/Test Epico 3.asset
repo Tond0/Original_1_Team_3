@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a31cb0160df9d942b8c3a8e2e39c29a, type: 3}
   m_Name: Test Epico 3
   m_EditorClassIdentifier: 
-  nome_gioco: epico 3 vero
-  rarity: 0
+  nome_gioco: "Pok\xE8mon Rubino e Zaffiro"
+  rarity: 2
   nomi_falsi:
-  - epico falso 1
-  - epico falso 1
+  - "Pok\xE8mon Rubino e Topazio"
+  - "Pok\xE8mon Rubino e Topazio"

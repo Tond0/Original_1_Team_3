@@ -27,6 +27,8 @@ public class GameInfo : MonoBehaviour
     private float timeRemainingTransizione = 0;
     private float timeRemainingVita = 0;
 
+    public AudioSource audioSource;
+
 
     [SerializeField]private bool pickedUp;
     private TextMeshProUGUI txtDisplay;
@@ -38,6 +40,7 @@ public class GameInfo : MonoBehaviour
 
         startPos = transform.position;
         startRot = pacco.transform.eulerAngles;
+        audioSource= GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -62,6 +65,7 @@ public class GameInfo : MonoBehaviour
     public void DoPickedUp()
     {
         pickedUp = true;
+        audioSource.Play();
     }
 
     public void GameReleased()

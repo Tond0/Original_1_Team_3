@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a31cb0160df9d942b8c3a8e2e39c29a, type: 3}
   m_Name: Test Comune 3
   m_EditorClassIdentifier: 
-  nome_gioco: comune 3 vero
+  nome_gioco: 'Call Of Duty : Black Ops II'
   rarity: 0
   nomi_falsi:
-  - comune 3 falso 1
-  - comune 3 falso 1
+  - ' Call of Duty : Black Ops V'
+  - ' Call of Duty : Black Ops V'

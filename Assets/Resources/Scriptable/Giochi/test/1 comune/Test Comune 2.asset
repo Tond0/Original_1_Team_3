@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a31cb0160df9d942b8c3a8e2e39c29a, type: 3}
   m_Name: Test Comune 2
   m_EditorClassIdentifier: 
-  nome_gioco: comune 2 vero
+  nome_gioco: World of Warcraft
   rarity: 0
   nomi_falsi:
-  - comune 2 falso 1
-  - comune 2 falso 1
+  - ' Wars of Warcraft'
+  - ' Wars of Warcraft'

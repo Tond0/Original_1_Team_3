@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a31cb0160df9d942b8c3a8e2e39c29a, type: 3}
   m_Name: Test Raro 1
   m_EditorClassIdentifier: 
-  nome_gioco: raro 1 vero
-  rarity: 0
+  nome_gioco: 'The Witcher 3 : Wild Hunt   '
+  rarity: 1
   nomi_falsi:
-  - raro 1 falso 1
-  - raro 1 falso 1
+  - 'The Witcher 3 : Assassins of Kings'
+  - 'The Witcher 3 : Assassins of Kings'

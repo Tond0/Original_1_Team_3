@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a31cb0160df9d942b8c3a8e2e39c29a, type: 3}
   m_Name: Test Leggendario 1
   m_EditorClassIdentifier: 
-  nome_gioco: leggendario 1 vero
-  rarity: 0
+  nome_gioco: 'The Elder Scroll V : Skyrim'
+  rarity: 3
   nomi_falsi:
-  - leggendario falso 1
-  - leggendario falso 1
+  - The Elder Scroll IV :Skyrim
+  - The Elder Scroll IV :Skyrim

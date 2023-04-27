@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a31cb0160df9d942b8c3a8e2e39c29a, type: 3}
   m_Name: Test Comune 1
   m_EditorClassIdentifier: 
-  nome_gioco: comune 1 vero
+  nome_gioco: 'Minecraft '
   rarity: 0
   nomi_falsi:
-  - comune 1 falso 1
-  - comune 1 falso 1
+  - '  Minecraft 2'
+  - '  Minecraft 2'
