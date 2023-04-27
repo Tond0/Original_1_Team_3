@@ -89,9 +89,6 @@ public class SpawnGiochi : MonoBehaviour
         else
         {
 
-
-
-
             int randomGamesNumber = Random.Range(minGameRange1, MaxGameRange1 + 1);
 
 
