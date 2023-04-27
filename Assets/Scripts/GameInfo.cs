@@ -21,7 +21,6 @@ public class GameInfo : MonoBehaviour
     [SerializeField] AnimationCurve rotToDest;
     [SerializeField] LayerMask whereToLand;
     [SerializeField] GameObject pacco;
-    [SerializeField] GameObject mano;
 
     [SerializeField] private float durataVita;
     [SerializeField] private float durataTransizione;
