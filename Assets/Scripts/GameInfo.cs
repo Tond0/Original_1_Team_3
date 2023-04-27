@@ -48,8 +48,6 @@ public class GameInfo : MonoBehaviour
             if (pickedUp)
             {
                 transform.localPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 60));
-                Cursor.SetCursor(manoChiusa, new Vector2(manoChiusa.width / 2, manoChiusa.height / 2), CursorMode.Auto);
-                Debug.Log("entrato");
             }
             else
             {
