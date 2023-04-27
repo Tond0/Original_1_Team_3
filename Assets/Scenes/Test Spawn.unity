@@ -860,7 +860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1126f5f08f23a645a38a82b62a83146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempo_gioco: 2
+  tempo_gioco: 0.5
+  scriptableRankPlayer: {fileID: 11400000, guid: 77462cb42dab7fb4fb00c3e8afe785dd, type: 2}
 --- !u!4 &1154039350
 Transform:
   m_ObjectHideFlags: 0

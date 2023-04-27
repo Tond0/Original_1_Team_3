@@ -6,7 +6,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public float tempo_gioco;
+    public ScriptableRank scriptableRankPlayer;
     private float punteggio;
+
 
     public static GameManager instance;
 
@@ -34,7 +36,10 @@ public class GameManager : MonoBehaviour
         UIManager.instance.PunteggioText(punteggio);
 
         if (tempo_gioco < 0)
+        {
             UIManager.instance.FinisceGioco();
+            scriptableRankPlayer.punteggio = punteggio.;
+        }
     }
 
     public void AlteraTimerGioco(int alterazioneTempo)

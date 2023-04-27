@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour
     public void Awake()
     {
         if(instance != null)
-            Destroy(gameObject);
+            Destroy(this);
         else
             instance = this;
     }
@@ -62,7 +62,6 @@ public class UIManager : MonoBehaviour
         float seconds = Mathf.FloorToInt(time % 60);
 
         int punteggio = (int)time;
-        //punteggioTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         punteggioTxt.text = punteggio.ToString();
     }
 }

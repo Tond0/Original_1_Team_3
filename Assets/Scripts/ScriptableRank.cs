@@ -7,7 +7,7 @@ using UnityEngine;
 public class ScriptableRank : ScriptableObject, IComparable<ScriptableRank>
 {
     public string nome;
-    public int punteggio;
+    public float punteggio;
 
     public int CompareTo(ScriptableRank rank)
     {

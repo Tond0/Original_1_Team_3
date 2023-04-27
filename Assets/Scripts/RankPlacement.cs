@@ -1,9 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Security.Cryptography;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Android;
@@ -35,7 +32,9 @@ public class RankPlacement : MonoBehaviour
             posSpawnata.transform.localPosition += new Vector3(0, i * -offsets, 0);
             posSpawnata.posizione.text = i + 1 + "°";
             posSpawnata.nome.text = rank.nome;
-            posSpawnata.punteggio.text = rank.punteggio.ToString();
+
+            int punteggio = (int)rank.punteggio;
+            posSpawnata.punteggio.text = punteggio.ToString();
             i++;
         }
     }
