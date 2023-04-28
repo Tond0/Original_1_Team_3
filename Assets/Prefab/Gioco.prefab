@@ -128,8 +128,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   pacco: {fileID: 8282272201715653721}
-  durataVita: 13
+  durataVita: 15
   durataTransizione: 3
+  audioSource: {fileID: 0}
   pickedUp: 0
 --- !u!114 &276422416
 MonoBehaviour:

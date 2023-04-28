@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2585,39 +2585,77 @@ MonoBehaviour:
   limitA: {fileID: 1596200234}
   limitB: {fileID: 1038753380}
   commonGamesList:
-  - {fileID: 11400000, guid: bf7a23f6db93d6141b2d3d8b55ab58f4, type: 2}
-  - {fileID: 11400000, guid: a2e8c88f79d31c24da6fe8f23fe9b611, type: 2}
   - {fileID: 11400000, guid: 81a026434ad2e1143a43fcbfcd032525, type: 2}
+  - {fileID: 11400000, guid: 0e735a1ff2e3bd742b8fba558d845c6e, type: 2}
+  - {fileID: 11400000, guid: ae61ec4111b606c439629352abeabafc, type: 2}
+  - {fileID: 11400000, guid: 6ad1fe984acb35940b294087ac41899e, type: 2}
+  - {fileID: 11400000, guid: 8bbb434162229cd499eda67aeae98254, type: 2}
+  - {fileID: 11400000, guid: a1b2df820799e1b48814cfde91e61bd6, type: 2}
+  - {fileID: 11400000, guid: ca2c773ff0b57a04b98475369fc92fc4, type: 2}
+  - {fileID: 11400000, guid: bf7a23f6db93d6141b2d3d8b55ab58f4, type: 2}
+  - {fileID: 11400000, guid: 07b2d7baafbd45842af3db9ac53f3fec, type: 2}
   - {fileID: 11400000, guid: 31fb0d9a8240ff5408d7b84e22a3e6a8, type: 2}
+  - {fileID: 11400000, guid: 433afe86ab55e984ebad3090b8c3c69e, type: 2}
+  - {fileID: 11400000, guid: f8828e4bee6ff954c98a891f2d7ea6c4, type: 2}
+  - {fileID: 11400000, guid: bd70689d56cbca54bb3708ad51d69d3f, type: 2}
+  - {fileID: 11400000, guid: 9637123f3ce465f428c202a16f192182, type: 2}
+  - {fileID: 11400000, guid: 8b09ad672b4f4204eaf9be19d8618e4d, type: 2}
+  - {fileID: 11400000, guid: 2896ad64ac5be194896bdb4ea6f76bd4, type: 2}
+  - {fileID: 11400000, guid: eb89983bae1ad944d8b3e944a1d8fe14, type: 2}
+  - {fileID: 11400000, guid: a2e8c88f79d31c24da6fe8f23fe9b611, type: 2}
+  - {fileID: 11400000, guid: 59b243f9db5e6534ba34584ecea9038a, type: 2}
   rareGamesList:
-  - {fileID: 11400000, guid: a4ed1285ef5dcb14394f81c679e99c24, type: 2}
-  - {fileID: 11400000, guid: 7eb2a3649c0ffc948a9034a968132e7b, type: 2}
+  - {fileID: 11400000, guid: d8da8d59fada68144911cab174f7ff17, type: 2}
+  - {fileID: 11400000, guid: f7e106f9be8e30642af81f3cb64da9d3, type: 2}
+  - {fileID: 11400000, guid: f122abf2ae3c91c44915f4c416092764, type: 2}
   - {fileID: 11400000, guid: 948a7031ed25e394293cf247ff6da9b4, type: 2}
+  - {fileID: 11400000, guid: 610c8f72ee3f1e74d8211630dc51010c, type: 2}
+  - {fileID: 11400000, guid: 94a83806812d92a42aa2df66f1594cd3, type: 2}
   - {fileID: 11400000, guid: 595e4ae6c4958004bb94d8161e1007b9, type: 2}
-  - {fileID: 11400000, guid: 13c7bc3918829c84fa6a07eaa1157d46, type: 2}
+  - {fileID: 11400000, guid: 7eb2a3649c0ffc948a9034a968132e7b, type: 2}
+  - {fileID: 11400000, guid: 03758c5b751040d43b9f61a898f93380, type: 2}
+  - {fileID: 11400000, guid: d30161398d18a554bae98bbb1c2e6e93, type: 2}
+  - {fileID: 11400000, guid: 42dfa6dec0c7acb48a090b2b596a6724, type: 2}
+  - {fileID: 11400000, guid: 01bea8e2c3fcd9841ab7b8e678c5c430, type: 2}
+  - {fileID: 11400000, guid: 55c2f8337530372459150943540d8238, type: 2}
   epickGamesList:
-  - {fileID: 11400000, guid: 60d7585a479d6a0449b53752ff1113a9, type: 2}
+  - {fileID: 11400000, guid: 3b493671c067ebf4b86a452f9ccf74d6, type: 2}
+  - {fileID: 11400000, guid: 2960eedf44c0c124b90a60d8236735bc, type: 2}
+  - {fileID: 11400000, guid: 32a19aa4b04d297408efacde8f17cbf4, type: 2}
+  - {fileID: 11400000, guid: 1cbd22699ccc48043815abafc64c3616, type: 2}
+  - {fileID: 11400000, guid: 595685336b988aa439eb04b40f0a610a, type: 2}
+  - {fileID: 11400000, guid: 33c0c5f2a6a73c84dad9c64461593d54, type: 2}
+  - {fileID: 11400000, guid: ca6b53ae94b4e1442a5532f3b57b113e, type: 2}
+  - {fileID: 11400000, guid: f0fbc0bcd3e3e5b42b522279ed45f8a3, type: 2}
   - {fileID: 11400000, guid: 130d97fc281cb1448a75eb299b226ed6, type: 2}
   - {fileID: 11400000, guid: 803aab276272b1741a1dfe1e85a9198b, type: 2}
-  - {fileID: 11400000, guid: 32a19aa4b04d297408efacde8f17cbf4, type: 2}
+  - {fileID: 11400000, guid: 60d7585a479d6a0449b53752ff1113a9, type: 2}
+  - {fileID: 11400000, guid: 8101e50615bb4a14aacf559ad811fd85, type: 2}
   legendaryGamesList:
-  - {fileID: 11400000, guid: 46cb0cf16552b4f4ea74117839db49da, type: 2}
+  - {fileID: 11400000, guid: 6e7b42d766efb4e46b39bd286b2765b7, type: 2}
   - {fileID: 11400000, guid: 96712b5282caa01419adda480a3f42b2, type: 2}
+  - {fileID: 11400000, guid: 81e7f17dadf8cb94db93b63675616147, type: 2}
   - {fileID: 11400000, guid: dca2cc0794e88284d980be4009342260, type: 2}
   - {fileID: 11400000, guid: 9ab37c6f66f7af9459b68a557ff4f80d, type: 2}
+  - {fileID: 11400000, guid: d13a46c13a824b24fbd874edfad6c129, type: 2}
+  - {fileID: 11400000, guid: 46cb0cf16552b4f4ea74117839db49da, type: 2}
+  - {fileID: 11400000, guid: b10416bfa6c87904eb0c8c161a6644c2, type: 2}
+  - {fileID: 11400000, guid: f232dbf3f30dcd64e9c870981a1649e0, type: 2}
+  - {fileID: 11400000, guid: 14fbcaa13837ade47a7e5ca9504eb2f5, type: 2}
+  - {fileID: 11400000, guid: f80d8f70518eb704e982db4b0f504e36, type: 2}
   commonMterial: {fileID: 2100000, guid: b6d3ff9ef49fca846ac7af22310ad2bd, type: 2}
   rareMaterial: {fileID: 2100000, guid: 2d5c87c9227ac5445824441275aa67ec, type: 2}
   epicMaterial: {fileID: 2100000, guid: 80bcd4d36fb8af64bb401fab1322f597, type: 2}
   legendaryMaterial: {fileID: 2100000, guid: 1c846829dfc184d49808d8c162e1899f, type: 2}
-  commonProbability: 50
+  commonProbability: 40
   rareProbability: 30
-  epickProbability: 15
-  legendariProbabiliti: 5
+  epickProbability: 20
+  legendariProbabiliti: 10
   minCommonSpawns: 2
   minRareSpawns: 2
   minEpickSpawns: 2
   minLegendarySapwns: 2
-  time1: 13
+  time1: 15
   time2: 0
   time3: 0
   time4: 0

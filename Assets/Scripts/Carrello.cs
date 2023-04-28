@@ -19,20 +19,20 @@ public class Carrello : MonoBehaviour
             switch (gioco.rarity)
             {
                 case Rarity.Comune:
-                    tempoDaVariare = gioco.originale == true ? 2 : -1;
+                    tempoDaVariare = gioco.originale == true ? 4 : -2;
 
                     break;
 
                 case Rarity.Raro:
-                    tempoDaVariare = gioco.originale == true ? 3 : -2;
+                    tempoDaVariare = gioco.originale == true ? 5 : -3;
                     break;
 
                 case Rarity.Epico:
-                    tempoDaVariare = gioco.originale == true ? 4 : -3;
+                    tempoDaVariare = gioco.originale == true ? 6 : -4;
                     break;
 
                 case Rarity.Leggendario:
-                    tempoDaVariare = gioco.originale == true ? 6 : -5;
+                    tempoDaVariare = gioco.originale == true ? 8 : -6;
                     break;
             }
 
